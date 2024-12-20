@@ -96,10 +96,10 @@ function Contact() {
     if (validateForm() && verified) {
       // First API call
       axios
-        .post("http://localhost:5000/api/submit", formData)
+        .post("http://bmmyshupan.ap-south-1.awsapprunner.com/api/submit", formData)
         .then((response) => {
           // Second API call
-          return axios.post("http://localhost:5000/api/send", formData);
+          return axios.post("http://bmmyshupan.ap-south-1.awsapprunner.com/api/send", formData);
         })
         .then((emailResponse) => {
           toast.success("Email sent successfully!");
