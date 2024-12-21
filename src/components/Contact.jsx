@@ -96,10 +96,10 @@ function Contact() {
     if (validateForm() && verified) {
       // First API call
       axios
-        .post("http://localhost:5000 /api/submit", formData)
+        .post("http://localhost:5000/api/submit", formData)
         .then((response) => {
           // Second API call
-          return axios.post("http://localhost:5000 /api/send", formData);
+          return axios.post("http://localhost:5000/api/send", formData);
         })
         .then((emailResponse) => {
           toast.success("Email sent successfully!");
