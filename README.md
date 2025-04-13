@@ -8,7 +8,6 @@ AgriVimaan is a web-based platform for managing agricultural drone services and 
 git clone https://github.com/SangameshMugli/agrivimaan-react.git
 cd agrivimaan-react
 
-**bash**
 # Install dependencies
 npm install
 
@@ -19,7 +18,7 @@ This will launch the application at http://localhost:3000.
 
 # 2 Database connection details/steps
 
-**bash**
+
 # Navigate to the backend directory
 cd agrivimaan-react  
 cd backend
